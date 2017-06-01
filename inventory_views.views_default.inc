@@ -78,8 +78,8 @@ function inventory_views_views_default_views() {
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
-  $handler->display->display_options['fields']['nothing']['label'] = 'JIRA';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<a href="https://jmaltd.atlassian.net/projects/[nick_name]">JIRA</a>';
+  $handler->display->display_options['fields']['nothing']['label'] = 'Redmine';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<a href="https://hq.megaphonetech.com/projects/[nick_name]">Redmine</a>';
   /* Sort criterion: CiviCRM Contacts: Nickname */
   $handler->display->display_options['sorts']['nick_name']['id'] = 'nick_name';
   $handler->display->display_options['sorts']['nick_name']['table'] = 'civicrm_contact';
@@ -152,6 +152,7 @@ function inventory_views_views_default_views() {
   $handler->display->display_options['header']['area_text_custom']['table'] = 'views';
   $handler->display->display_options['header']['area_text_custom']['field'] = 'area_text_custom';
   $handler->display->display_options['header']['area_text_custom']['label'] = '"New Contract" link';
+  $handler->display->display_options['header']['area_text_custom']['empty'] = TRUE;
   $handler->display->display_options['header']['area_text_custom']['content'] = '<a href="/node/add/contract?destination=contract-list">New Contract</a>';
   /* Relationship: Entity Reference: Referenced Entity */
   $handler->display->display_options['relationships']['field_client_target_id']['id'] = 'field_client_target_id';
