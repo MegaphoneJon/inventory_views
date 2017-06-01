@@ -29,7 +29,7 @@ function inventory_views_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => 0,
     'customized' => 1,
-    'parent_identifier' => 'navigation_jma:<front>',
+    'parent_identifier' => 'navigation_inventory:<front>',
   );
   // Exported menu link: navigation_contract-list:contract-list.
   $menu_links['navigation_contract-list:contract-list'] = array(
@@ -50,19 +50,19 @@ function inventory_views_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => 1,
     'customized' => 1,
-    'parent_identifier' => 'navigation_jma:<front>',
+    'parent_identifier' => 'navigation_inventory:<front>',
   );
-  // Exported menu link: navigation_jma:<front>.
-  $menu_links['navigation_jma:<front>'] = array(
+  // Exported menu link: navigation_inventory:<front>.
+  $menu_links['navigation_inventory:<front>'] = array(
     'menu_name' => 'navigation',
     'link_path' => '<front>',
     'router_path' => '',
-    'link_title' => 'JMA',
+    'link_title' => 'Inventory',
     'options' => array(
       'attributes' => array(
         'title' => '',
       ),
-      'identifier' => 'navigation_jma:<front>',
+      'identifier' => 'navigation_inventory:<front>',
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -91,7 +91,7 @@ function inventory_views_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => 2,
     'customized' => 1,
-    'parent_identifier' => 'navigation_jma:<front>',
+    'parent_identifier' => 'navigation_inventory:<front>',
   );
   // Exported menu link: navigation_website-list:website-list.
   $menu_links['navigation_website-list:website-list'] = array(
@@ -112,14 +112,14 @@ function inventory_views_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => 3,
     'customized' => 1,
-    'parent_identifier' => 'navigation_jma:<front>',
+    'parent_identifier' => 'navigation_inventory:<front>',
   );
 
   // Translatables
   // Included for use with string extractors like potx.
   t('Client List');
   t('Contract List');
-  t('JMA');
+  t('Inventory');
   t('Server List');
   t('Website List');
 
