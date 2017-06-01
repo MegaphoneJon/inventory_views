@@ -1,4 +1,5 @@
 name = Inventory Views
+description = Adds content types and corresponding views to track client (via CiviCRM), contracts, servers and websites.
 core = 7.x
 package = Features
 version = 7.x-1.0
