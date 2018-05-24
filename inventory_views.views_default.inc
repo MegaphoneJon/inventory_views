@@ -1149,14 +1149,6 @@ function inventory_views_views_default_views() {
   $handler->display->display_options['fields']['field_civicrm']['table'] = 'field_data_field_civicrm';
   $handler->display->display_options['fields']['field_civicrm']['field'] = 'field_civicrm';
   $handler->display->display_options['fields']['field_civicrm']['element_label_colon'] = FALSE;
-  /* Field: Content: Contract */
-  $handler->display->display_options['fields']['field_contract']['id'] = 'field_contract';
-  $handler->display->display_options['fields']['field_contract']['table'] = 'field_data_field_contract';
-  $handler->display->display_options['fields']['field_contract']['field'] = 'field_contract';
-  $handler->display->display_options['fields']['field_contract']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['field_contract']['alter']['path'] = '/contract-list?&title=[field_contract]';
-  $handler->display->display_options['fields']['field_contract']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_contract']['type'] = 'node_reference_plain';
   /* Field: Content: webroot */
   $handler->display->display_options['fields']['field_webroot']['id'] = 'field_webroot';
   $handler->display->display_options['fields']['field_webroot']['table'] = 'field_data_field_webroot';
@@ -1301,6 +1293,13 @@ function inventory_views_views_default_views() {
   $handler->display->display_options['fields']['nick_name_1']['field'] = 'nick_name';
   $handler->display->display_options['fields']['nick_name_1']['relationship'] = 'field_client_target_id_1';
   $handler->display->display_options['fields']['nick_name_1']['label'] = 'canonical_server_client';
+  /* Field: Content: Contract Type */
+  $handler->display->display_options['fields']['field_contract_type']['id'] = 'field_contract_type';
+  $handler->display->display_options['fields']['field_contract_type']['table'] = 'field_data_field_contract_type';
+  $handler->display->display_options['fields']['field_contract_type']['field'] = 'field_contract_type';
+  $handler->display->display_options['fields']['field_contract_type']['relationship'] = 'field_contract_nid';
+  $handler->display->display_options['fields']['field_contract_type']['label'] = 'contract_type';
+  $handler->display->display_options['fields']['field_contract_type']['delta_offset'] = '0';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
